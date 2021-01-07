@@ -1,0 +1,10 @@
+<hr>
+<ng-container *ngIf="(patientInformations$ | async) as patientInformations">
+	<app-patient-informations [room]="patientInformations.bed.id" [name]="patientInformations.bed.patient.name"
+		[age]="patientInformations.bed.patient.age" [dateOfBirth]="patientInformations.bed.patient.dateOfBirth"
+		[mrn]="patientInformations.bed.patient.mrn">
+	</app-patient-informations>
+	<hr />
+	<app-measurement [measurements]="patientInformations.bed.patient.deviceMappings[0].device.measurements">
+	</app-measurement>
+</ng-container>

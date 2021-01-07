@@ -1,0 +1,21 @@
+#measurement td,
+#measurement th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 12px;
+}
+
+#measurement th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #b0e0e6;
+  color: black;
+  font-size: 12px;
+}
+
+#measurement {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}

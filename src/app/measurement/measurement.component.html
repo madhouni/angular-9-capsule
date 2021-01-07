@@ -1,0 +1,17 @@
+<app-title title="Measurements Informations"></app-title>
+<table id="measurement">
+	<thead>
+		<tr>
+			<th colspan="1">Measurements</th>
+			<th colspan="1">Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<ng-container *ngFor="let meas of measurements">
+			<tr [ngStyle]="{'background-color': meas?.metaData?.color}">
+				<td>{{meas.id}}</td>
+				<td>{{meas.value}}</td>
+			</tr>
+		</ng-container>
+	</tbody>
+</table>
